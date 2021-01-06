@@ -18,6 +18,27 @@ const eqArrays = function(original, comparison) {
   }
 };
 
+const eqArrays = function(original, arr2) {
+  let isTrue = true;
+
+  for (let x = 0; x < original.length; x++) {
+    if (original[x] !== comparison[x]) {
+      isTrue = false;
+      return isTrue;
+    }
+  }
+  return isTrue;
+};
+
+// function to see if the return value from eqArrays() and "true" match
+const assertEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`✔✔✔ Assertion Passed: ${actual} !== ${expected}`);
+  } else if (actual !== expected) {
+    console.log(`✖✖✖ Assertion Failed: ${actual} === ${expected}`);
+  }
+};
+
 //[----------------Testing examples----------------]
 
 let testArray1 = [1, 2, 3, 4, 5, 6];
