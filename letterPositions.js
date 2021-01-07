@@ -20,6 +20,7 @@ const eqArrays = function(original, comparison) {
   return isTrue;
 };
 
+//checks "sentence" and then interts letters uniquely into an array
 const letterPositions = function(sentence) {
   const results = {};
   let counter = 0

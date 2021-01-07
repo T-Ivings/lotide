@@ -20,7 +20,10 @@ const countLetters = function(string) {
 
 const result1 = countLetters("lighthouse in the house")
 
+
 assertEqual(result1["n"], 1);
 assertEqual(result1["h"], 4);
 assertEqual(result1["t"], 2);
 assertEqual(result1["w"], undefined);
+
+console.log(result1)

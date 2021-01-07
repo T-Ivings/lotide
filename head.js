@@ -6,10 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(array){
-let head = array[0]
-  return head
-}
+const head = function(array) {
+  let head = array[0];
+  return head;
+};
 
-assertEqual(head([]), );
+assertEqual(head([]));
 assertEqual(head(["Hello"]), "Hello");

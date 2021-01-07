@@ -1,14 +1,14 @@
 
 const without = function(source, toBeRemoved) {
   let newArray = [];
-  loop1: for (let x = 0; x < source.length; x++) {
-    for (let y = 0; y < toBeRemoved.length; y++) {
+  loop1: for (let x = 0; x < source.length; x++) { //first loop
+    for (let y = 0; y < toBeRemoved.length; y++) { //second loop
       if (source[x] === toBeRemoved[y]) {
-        continue loop1;
+        continue loop1; //if it's equal, go back to the first loop and don't push to new array
       }
     }
     
-    newArray.push(source[x]);
+    newArray.push(source[x]); //if its not the same as toBeRemoved, push into new array
   }
 
   return newArray;

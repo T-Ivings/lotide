@@ -6,29 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(original, comparison) {
+const eqArrays = (original, comparison) => {
+  if (original.length !== comparison.length) {
+    return false;
+  }
   for (let x = 0; x < original.length; x++) {
     if (original[x] !== comparison[x]) {
       return false;
-    } else {
-      if ((x + 1) >= original.length) {
-        return true;
-      }
     }
   }
-};
+  return true;
 
-const eqArrays = function(original, arr2) {
-  let isTrue = true;
+}
 
-  for (let x = 0; x < original.length; x++) {
-    if (original[x] !== comparison[x]) {
-      isTrue = false;
-      return isTrue;
-    }
-  }
-  return isTrue;
-};
 
 // function to see if the return value from eqArrays() and "true" match
 const assertEqual = function (actual, expected) {
