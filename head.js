@@ -6,5 +6,4 @@ const head = function(array) {
   return head;
 };
 
-assertEqual(head([]));
-assertEqual(head(["Hello"]), "Hello");
+module.exports = head;

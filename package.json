@@ -1,0 +1,22 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "lotide proj for lighthouse",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Ivings/lotide.git"
+  },
+  "author": "taylor ivings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Ivings/lotide/issues"
+  },
+  "homepage": "https://github.com/T-Ivings/lotide#readme"
+}
