@@ -1,18 +1,17 @@
-const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
+const assert = require('chai').assert;
 
+describe("#middle", () => {
+  it("should return [person] for ['cat', 'dog', 'person', 'television', 'camera']", () => {
+    assert.deepEqual(middle(["cat", "dog", "person", "television", "camera"]), ["person"])
+  });
 
+  it("should return [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+  });
 
-//-----------Test--------------
-const testArray = [1, 2, 3, 4, 5, 6]
-const testArray1 = [1, 2, 3, 4, 5, 6]
-assertArraysEqual(middle(testArray), middle(testArray1));
+  it("should return [7, 8] for [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]), [7, 8])
+  });
 
-
- const testArray2 = [1, 2, 3, 4]
- const testArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
- assertArraysEqual(middle(testArray2), middle(testArray3))
-
- const testArray4 = ["cat", "dog", "person", "television", "camera"]
- const testArray5 = ["dog", "cat", "person", "camera", "television"]
- assertArraysEqual(middle(testArray4), middle(testArray5))
+});
